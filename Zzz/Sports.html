@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPORTS</title>
+    <link rel="stylesheet" href="../common.css">
+
+    <style>
+        * {
+            text-decoration: none;
+        }
+
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        /* =========================================== header */
+        header>div.banner1>div.block1>h1 {
+            float: left;
+        }
+
+        header>div.banner1 {
+            width: 100%;
+            background: #255fbe;
+            border-bottom: 1px solid royalblue;
+            font-size: 25px;
+            font-weight: bold;
+            padding: 13px;
+        }
+
+        header div.banner1 div.block1 {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        header>div.banner1>div.block1>div.sub>a {
+            color: lightgray;
+            padding: 8px;
+            font-size: 21px;
+        }
+
+        header>div.banner1>div.block1>div.sub>a#b1 {
+            color: lightgray;
+            height: 52px;
+            padding: 3px;
+            font-size: 17px;
+        }
+
+        header>div.banner1>div.block1>h1>a#Nlogo {
+            color: #255fbe;
+            background: white;
+        }
+
+        header>div.banner1>div.block1>h1>a#Slogo {
+            color: white;
+        }
+
+        header>div.banner1>div.block1>div.sub .button {
+            float: right;
+        }
+
+        header>div.banner1>div.block1>div.sub .button button#login {
+            /* background: #255fbe;
+            border: 2px solid royalblue;
+            color: white; */
+        }
+
+        header>div.banner1>div.block1>div.sub .button button#bookmark {
+            /* background: #255fbe;
+            border: 2px solid royalblue; */
+
+        }
+
+
+        header>div.banner2 {
+            width: 100%;
+            background: #255fbe;
+            border-bottom: 1px solid royalblue;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+            margin: 0 auto;
+        }
+
+        header div.banner2 div.block2 {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        header>div.banner2 div.block2>a {
+            color: lightgray;
+            padding: 5px;
+            font-size: 18px;
+        }
+
+        header div.banner2 div.block2 div.block2-1 {
+            display: inline;
+            margin-right: 50px;
+        }
+
+        header>div.banner3 {
+            width: 100%;
+            background: white;
+            border-bottom: 1px solid #dfe3ec;
+            font-size: 20px;
+            text-align: center;
+            padding: 20px;
+            margin: 0 auto;
+        }
+
+        header>div.banner3 div.block3 {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        header>div.banner3 div.block3>a {
+            color: gray;
+            padding: 8px;
+            font-size: 17px;
+        }
+
+        header div.banner3 div.block3 div.block3-1 {
+            background: aqua;
+            display: inline;
+            margin-right: 485px;
+        }
+
+        /* =========================================== container */
+
+        div.container {
+            border: 1px solid #000;
+            width: 52%;
+            height: 2600px;
+            margin: 0 auto;
+        }
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* =========================================== footer */
+        footer>div.footer1 {
+            width: 100%;
+            background: #f2f4f7;
+            border-bottom: 1px solid #dfe3ec;
+            font-size: 20px;
+            text-align: center;
+            padding: 20px;
+            margin: 0 auto;
+        }
+
+        footer>div.footer1 .foot1 {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        footer>div.footer1>.foot1 p {
+            font-size: 12px;
+            display: inline;
+            font-weight: bold;
+            color: slategray;
+        }
+
+        footer>div.footer1>.foot1 a {
+            font-size: 12px;
+            color: slategray;
+        }
+
+        footer>div.footer1 .foot1>a:hover {
+            text-decoration: underline;
+        }
+
+        footer>div.footer1 .foot1>div.footer1-1 {
+            font-size: 10px;
+            display: inline;
+        }
+
+        footer>div.footer1 .foot1>div.footer1-1>a:hover {
+            text-decoration: underline;
+        }
+
+        footer>div.footer1 .foot1>div.footer1-1>a {
+            margin: 14px;
+            font-size: 12px;
+            color: slategray;
+            font-weight: bold;
+        }
+
+        footer>div.footer1 .foot1>div.footer1-1>div.ftblock1 {
+            display: inline;
+            margin: auto 31px;
+        }
+
+        footer>div.footer2 {
+            width: 100%;
+            margin: 0 auto;
+            background: #f2f4f7;
+            border-bottom: 1px solid #dfe3ec;
+            font-size: 12px;
+            text-align: center;
+            padding: 20px;
+            color: slategray;
+        }
+
+        footer>div.footer2 div.lastfix {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        footer>div.footer2 .lastfix>p {
+            background: #f2f4f7;
+            text-align: center;
+            padding: 5px;
+        }
+
+        footer>div.footer2>p#warning {
+            font-size: 11.5px;
+        }
+
+        footer>div.footer2 .lastfix>a {
+            font-size: 12px;
+            color: slategray;
+            margin: 10px;
+        }
+
+        footer>div.footer2 .lastfix>a:hover {
+            text-decoration: underline;
+        }
+
+        footer>div.footer2 .lastfix a#pipp {
+            font-weight: bold;
+        }
+
+        footer>div.footer2 .lastfix>p#Lee {
+            display: inline-block;
+        }
+
+        footer>div.footer2 .lastfix>p#mark:hover {
+            text-decoration: underline;
+        }
+
+        footer div.footer2 .lastfix a#flogin {
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ======================================================= header -->
+    <header>
+        <div class="banner1 clearfix">
+            <div class="block1">
+
+                <h1>
+                    <a href="https://www.naver.com" id="Nlogo">N</a>
+                    <a href="https://sports.news.naver.com/index" id="Slogo">SPORTS</a>
+                </h1>
+                <div class="sub">
+                    <a href="https://m.sports.naver.com/community/index">커뮤니티</a>
+                    <a href="https://news.naver.com/" id="b1">뉴스</a>
+                    <a href="https://weather.naver.com/" id="b1">날씨</a>
+                    <a href="https://entertain.naver.com/home" id="b1">연예</a>
+                    <div class="button">
+                        <button type="submit" value="로그인" id="login">로그인</button>
+                        <button type="button" value="즐겨찾기" id="bookmark">★</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner2">
+            <div class="block2">
+                <a href="https://sports.news.naver.com/index">스포츠 홈</a>
+                <a href="https://sports.news.naver.com/kbaseball/index">야구</a>
+                <a href="https://sports.news.naver.com/wbaseball/index">WBCㆍ해외야구</a>
+                <a href="https://sports.news.naver.com/kfootball/index">축구</a>
+                <a href="https://sports.news.naver.com/wfootball/index">해외축구</a>
+                <a href="https://sports.news.naver.com/basketball/index">농구</a>
+                <a href="https://sports.news.naver.com/volleyball/index">배구</a>
+                <a href="https://sports.news.naver.com/golf/index">골프</a>
+                <a href="https://sports.news.naver.com/general/index">일반</a>
+                <a href="https://game.naver.com/esports/League_of_Legends/home">e스포츠</a>
+                <a href="https://sports.news.naver.com/scoreboard/index">오늘의 경기</a>
+                <a href="https://m.sports.naver.com/column/storyteller">연재</a>
+                <a href="https://sports.news.naver.com/ranking/index">랭킹</a>
+                <div class="block2-1"></div>
+            </div>
+        </div>
+        <div class="banner3">
+            <div class="block3">
+                <a href="https://sports.news.naver.com/wfootball/news/index?isphoto=N">최신뉴스</a>
+                <a href="https://m.sports.naver.com/wfootball/video">영상</a>
+                <a href="https://sports.news.naver.com/photocenter/albumList?category=wfootball">생생화보</a>
+                <a href="https://sports.news.naver.com/wfootball/schedule/index">일정/결과</a>
+                <a href="https://sports.news.naver.com/wfootball/record/index">기록/순위</a>
+                <a href="https://m.sports.naver.com/wfootball/predict">승부예측</a>
+                <div class="block3-1"></div>
+            </div>
+        </div>
+
+
+    </header>
+    <!-- ============================================================= body -->
+
+    <div class="container">
+        <div class="main">
+            <div class="headline">
+                <div class=""></div>
+            </div>
+            <div class="sideline">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div>
+        <!-- =========================================================== footer -->
+        <footer>
+            <div class="footer1">
+                <div class="foot1">
+                    <p>공지시항</p>
+                    <a href="https://blog.naver.com/naver_sports/223032826367">2023 WBC, 네이버스포츠와 함께해요!</a>
+                    <div class="footer1-1">
+                        <div class="ftblock1"></div>
+                        <a href="https://sports.news.naver.com/index">홈</a>
+                        <a href="https://sports.news.naver.com/kbaseball/index">야구</a>
+                        <a href="https://sports.news.naver.com/wbaseball/index">WBCㆍ해외야구</a>
+                        <a href="https://sports.news.naver.com/kfootball/index">축구</a>
+                        <a href="https://sports.news.naver.com/wfootball/index">해외축구</a>
+                        <a href="https://sports.news.naver.com/basketball/index">농구</a>
+                        <a href="https://sports.news.naver.com/volleyball/index">배구</a>
+                        <a href="https://sports.news.naver.com/golf/index">N골프</a>
+                        <a href="https://sports.news.naver.com/general/index">일반</a>
+                        <a href="https://game.naver.com/esports/League_of_Legends/home">e스포츠</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer2">
+                <div class="lastfix">
+                    <a href="https://nid.naver.com/nidlogin.login?url=https%3A%2F%2Fsports.news.naver.com%2Fwfootball%2Findex"
+                        id="flogin">로그인</a>
+                    <a href="https://www.naver.com/more.html">전체서비스</a>
+                    <a href="https://help.naver.com/service/5610/category/bookmark?lang=ko">고객센터</a>
+                    <a href="https://help.naver.com/inquiry/input.help?categoryNo=5457&serviceNo=5610&lang=ko">문제신고</a>
+                    <a href="https://policy.naver.com/rules/privacy.html" id="pipp">개인정보처리방침</a>
+                    <a href="https://news.naver.com/main/ombudsman/edit.naver?mid=omb">기사배열 원칙 책임자 : 유봉석</a>
+                    <p id="Lee">청소년 보호 책임자 : 이희만</p>
+                    <p id="warning">본 콘텐츠의 저작권은 제공처 또는 네이버에 있으며, 이를 무단 이용하는 경우 저작권법 등에 따라 법적 책임을 질 수
+                        있습니다.</p>
+                    <p id="mark">© NAVER Corp.</p>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
