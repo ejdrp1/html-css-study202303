@@ -20,17 +20,22 @@
         }
 
         /* =========================================== header */
+        header .bc{
+            background: linear-gradient(to right, #255fbe, #7a28ff);
+            opacity: 0.9;
+        }
+        
         header>div.banner1>div.block1>h1 {
             float: left;
         }
-
+        
+        
         header>div.banner1 {
             width: 100%;
-            background: #255fbe;
-            border-bottom: 1px solid royalblue;
-            font-size: 25px;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            font-size: 20px;
             font-weight: bold;
-            padding: 13px;
+            padding: 15px 0;
         }
 
         header div.banner1 div.block1 {
@@ -62,25 +67,33 @@
 
         header>div.banner1>div.block1>div.sub .button {
             float: right;
+            
+        }
+        header>div.banner1>div.block1>div.sub .button div{
+            float: left;
         }
 
-        header>div.banner1>div.block1>div.sub .button button#login {
-            /* background: #255fbe;
+        header>div.banner1>div.block1>div.sub .button a#login {
+            border: 1px solid rgba(0,0,0,0.1);
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        header>div.banner1>div.block1>div.sub .button a#bookmark {
             border: 2px solid royalblue;
-            color: white; */
-        }
-
-        header>div.banner1>div.block1>div.sub .button button#bookmark {
-            /* background: #255fbe;
-            border: 2px solid royalblue; */
-
+            cursor: pointer;
+            background: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0H3V3H0V0ZM6 0H9V3H6V0ZM15 0H12V3H15V0ZM0 6H3V9H0V6ZM9 6H6V9H9V6ZM12 6H15V9H12V6ZM3 12H0V15H3V12ZM6 12H9V15H6V12ZM15 12H12V15H15V12Z' fill='white'/%3E%3C/svg%3E%0A");
+            display: inline-block;
+            width: 20px;
+            height: 20px;
         }
 
 
         header>div.banner2 {
             width: 100%;
-            background: #255fbe;
-            border-bottom: 1px solid royalblue;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
             font-size: 20px;
             font-weight: bold;
             text-align: center;
@@ -141,7 +154,7 @@
         }
 
 
-        
+
 
 
 
@@ -273,7 +286,7 @@
 
     <!-- ======================================================= header -->
     <header>
-        <div class="banner1 clearfix">
+        <div class="banner1 bc clearfix">
             <div class="block1">
 
                 <h1>
@@ -286,13 +299,17 @@
                     <a href="https://weather.naver.com/" id="b1">날씨</a>
                     <a href="https://entertain.naver.com/home" id="b1">연예</a>
                     <div class="button">
-                        <button type="submit" value="로그인" id="login">로그인</button>
-                        <button type="button" value="즐겨찾기" id="bookmark">★</button>
+                        <div class="">
+                            <a href="https://nid.naver.com/nidlogin.login?url=https%3A%2F%2Fsports.news.naver.com%2Fwfootball%2Findex.nhn" value="로그인" id="login">로그인</a>
+                        </div>
+                        <div>
+                            <a href="#" id="bookmark"></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="banner2">
+        <div class="banner2 bc">
             <div class="block2">
                 <a href="https://sports.news.naver.com/index">스포츠 홈</a>
                 <a href="https://sports.news.naver.com/kbaseball/index">야구</a>
@@ -363,7 +380,7 @@
             </div>
             <div class="footer2">
                 <div class="lastfix">
-                    <a href="https://nid.naver.com/nidlogin.login?url=https%3A%2F%2Fsports.news.naver.com%2Fwfootball%2Findex"
+                    <a href="https://nid.naver.com/nidlogin.login?url=https%3A%2F%2Fsports.news.naver.com%2Fwfootball%2Findex.nhn"
                         id="flogin">로그인</a>
                     <a href="https://www.naver.com/more.html">전체서비스</a>
                     <a href="https://help.naver.com/service/5610/category/bookmark?lang=ko">고객센터</a>
