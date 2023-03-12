@@ -3,121 +3,243 @@
 /* Tvlist */
 
 /* 전체 */
-section{
+section {
     width: 100%;
-    height: 4700px;
+    height: 6100px;
     margin: 0 auto;
-    border: 2px solid red;
+}
+
+/* ================================================== header 시작 */
+.main {
+    /* 헤더 */
+    height: 488px;
+    border-bottom: 2px solid lightgray;
+}
+
+.main h1 {
+    /* 제목 */
+    margin: 0;
+    padding: 30px 0;
+    font-weight: bold;
+    font-size: 36px;
     text-align: center;
 }
 
-/* header 시작 */
-.main{ /* 헤더 */
-    /* border: 1px solid #000; */
-    border-bottom: 2px solid lightgray;
-    margin-bottom: 20px;
-    height: 460px; 
-} 
-.main h1{ /* 제목 */
-    /* border: 1px solid red; */
-    font-weight: bold;
-    font-size: 36px;
-    padding: 30px;
-}
-.main .info{ /* TV 이미지, text 모음 */
-    border: 1px solid rgb(214, 211, 240);
-    background: rgb(214, 211, 240);
+.main .info {
+    /* TV 이미지, text 모음 */
     width: 1380px;
     height: 300px;
-    border-radius: 20px;
     margin: 0 auto;
+    border: 1px solid rgb(214, 211, 240);
+    background: rgb(214, 211, 240);
+    border-radius: 20px;
     position: relative;
 }
-.main .info img{ /* TV 이미지 */ 
-    padding: 0;
-    margin: 0;
+
+.main .info img {
+    /* TV 이미지 */
     height: 280px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 70px;
 }
 
-.main .info .infotext .infotext{ /* text 모음 */
+.main .info .infotext .infotext {
+    /* infotext 모음 */
     width: 100px;
     float: left;
 }
-.main .info .infotext .infotext1{ /* text 설명1 */
-    font-weight: bold;
-    font-size: 30px;
-    text-align: left;
+
+.main .info .infotext .infotext1 {
+    /* 사진 text 설명1 */
     width: 350px;
     height: 90px;
     padding: 5px;
-    float: left;
+    text-align: left;
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
     line-height: 1.3;
     position: relative;
-    bottom: 200px;
+    bottom: 230px;
     left: 100px;
+    float: left;
 }
-.main .info .infotext .infotext2{ /* text 설명2 */
+
+.main .info .infotext .infotext2 {
+    /* 사진 text 설명2 */
     width: 300px;
     height: 30px;
     padding: 5px;
     text-align: left;
-    float: left;
-    position: relative;
-    bottom: 100px;
-    left: -250px;
     font-size: 21px;
-}
-.main #tvlist{ /* TV 목록1 */
-    width: 1000px;
-    margin: 0 auto;
+    color: rgb(84, 84, 84);
     position: relative;
-    bottom: 10px;
-    right: 95px;
+    bottom: 120px;
+    left: -260px;
     float: left;
 }
 
-.main .Tvlist-main ul{ 
+.main #tvlist {
+    /* TV 목록 */
+    width: 1000px;
+    position: relative;
+    bottom: 70px;
+    right: 135px;
+    float: left;
+}
+
+.main #tvlist .main .Tvlist-main ul {
+    /* TV 목록 + 종류 */
     width: 840px;
+    margin: 0;
     float: left;
 }
-.main .Tvlist-main ul li{ /* TV 종류 */
-    padding: 20px 0;
-    font-weight: bold;
-    cursor: pointer;
+
+.main .Tvlist-main ul li {
+    /* TV 종류 */
     margin-left: 23px;
+    padding: 20px 0;
+    cursor: pointer;
+    list-style: none;
     float: left;
 }
-.main .Tvlist-main ul li:hover{ /* TV 목록 선택 시 */
+
+.main .Tvlist-main ul li a {
+    /* TV 종류 */
+    font-weight: 900;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+
+.main .Tvlist-main ul li:hover {
+    /* TV 목록 선택 시 */
     border-bottom: 4px solid #000;
 }
 
+/* =============================================== header 종료 */
 
+/* =============================================== container 시작 */
 
+.container {
+    /* container 전체 */
+    width: 100%;
+    height: 5570px;
+    margin: 50px auto;
 
+}
 
+.container .content {
+    /* TV 제품 박스 전체1 */
+    width: 73%;
+    height: 3500px;
+    margin: 0 auto;
+}
 
+.container .content .content-Tvlist {
+    /* TV 제품 박스 전체1 */
+    height: 3000px;
+}
 
+.container .content .content-Tvlist ul {
+    /* TV 구성 박스 묶음 */
+    width: 100%;
+    height: 5570px;
+    margin-top: 0;
+    padding: 0;
+}
 
+.container .content .content-Tvlist ul li {
+    /* TV 구성 박스 낱개 */
+    height: 283px;
+    margin-bottom: 20px;
+    padding: 20px 45px;
+    border-radius: 20px;
+    list-style: none;
+    box-shadow: 0 0 20px rgb(230, 230, 230);
+}
 
+.container .content .content-Tvlist ul li .pictext {
+    /* TV 사진, 텍스트 묶음 */
+    width: 1280px;
+    height: 178px;
+    border-bottom: 1px solid rgb(240, 240, 240);
+    position: relative;
+    top: 40px;
+    float: left;
+}
 
+.container .content .content-Tvlist ul li .pictext a {
+    /* 제품 설명 텍스트 3줄 */
+    width: 1280px;
+    height: 170px;
+    text-decoration: none;
+    float: left;
+}
 
+.container .content .content-Tvlist ul li .pictext p {
+    /* 제품 설명 텍스트 3줄 */
+    width: 1040px;
+    height: 30px;
+    margin: 0;
+    padding-left: 47px;
+    position: relative;
+    left: 190px;
+    bottom: 140px;
+}
 
+.container .content .content-Tvlist ul li .pictext p.tvname {
+    /* 제품 설명 첫 번째 텍스트  */
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #000;
+}
 
+.container .content .content-Tvlist ul li .pictext p.tvinfo {
+    /* 제품 설명 두 번째 텍스트  */
+    margin-bottom: 10px;
+    padding-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
 
+.container .content .content-Tvlist ul li .pictext p.tvprice {
+    /* 제품 설명 세 번째 텍스트  */
+    color: gray;
+    font-size: 20px;
+}
 
+/* n개 제품 버튼 만들기 */
+.container .content .content-Tvlist ul li .more {
+    /* 버튼 바탕 */
+    width: 1290px;
+    height: 40px;
+    position: relative;
+    top: 60px;
+    float: left;
 
+}
 
+.container .content .content-Tvlist ul li .more a {
+    /* n개 제품 보기 버튼 */
+    width: 160px;
+    height: 40px;
+    border: 1px solid #000;
+    background: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 40px;
+    color: #000;
+    border-radius: 20px;
+    float: right;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ========================================================== container 종료 */
